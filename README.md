@@ -1,1 +1,2 @@
-# Squeeze-Page-Template
+# Squeeze Page Template
+Dancing Construction Worker
