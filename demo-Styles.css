@@ -44,6 +44,10 @@ model-viewer {
   text-decoration: none;
 }
 
+model-viewer {
+  --progress-bar-color: #ffffff;
+}
+
 footer {
   display: flex;
   flex-direction: column;
