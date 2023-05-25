@@ -23,7 +23,7 @@ model-viewer {
 }
 
  model-viewer {
-    --progress-bar-color: red;
+    --progress-bar-color: #FFFFFF;
 }  
 
 .attribution {
