@@ -22,6 +22,10 @@ model-viewer {
   height: 600px;
 }
 
+ model-viewer {
+    --progress-bar-color: red;
+}  
+
 .attribution {
   display: flex;
   flex-direction: row;
