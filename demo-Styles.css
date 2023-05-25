@@ -44,10 +44,6 @@ model-viewer {
   text-decoration: none;
 }
 
-model-viewer {
-  --progress-bar-color: #ffffff;
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -57,7 +53,6 @@ footer {
   font-style: italic;
   line-height: 1.5em;
 }
-
 
 #request-press-play {
   position:absolute;
