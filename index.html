@@ -115,6 +115,14 @@ var getOutboundLink = function(url) {
 }
 </script>
 
+<script>
+  window.addEventListener("load", () => {
+    var modelViewer = document.querySelector('model-viewer');
+    console.log("Can activate AR: " + modelViewer.canActivateAR);
+    modelViewer.activateAR();
+  });
+</script>
+ 
 <style> 
  
 .container {
@@ -176,7 +184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
  
     <!--<div class="card"> 
-       <model-viewer loading="eager" src="Models/part2_ver_3.glb?sound=Sound/Pool party sound_ver3_15sec.mp3" camera-controls
+       <model-viewer loading="eager" src="Models/part2_ver_3.glb?sound=Sound/Pool party sound_ver3_15sec.mp3" camera-controls 
                    camera-orbit="0deg 45deg 45%" autoplay animation-name="" id="interaction" id="reveal" exposure="1" shadow-intensity="1" ar ar-modes="scene-viewer webxr quick-look" ios-src="Models/Part_2_ver_3.usdz"
                    alt="NOHO WEST" auto-rotate-delay="0" ar-scale="auto"
                    slot= "progress-bar" style="z-index: 1; width: 100%; height: 600px; position: static; ">
@@ -184,16 +192,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                    <button slot="ar-button" style="z-index: 9; background-color: #EABEB0; border-radius: 8px; border: 1 px solid white; position: absolute; top: 2px; right: 0; height: 40px; width: auto; ">
                      👆 <b style="color:#FFFFFF;"><strong>AUGMENTED REALITY</strong></b></button> -->  
                
-   <!-- MAIN VERSION -->   
+   <!-- JUMP AR VERSION -->   
    <div class="card1">
+    <model-viewer camera-controls camera-orbit="-75deg 42deg 40deg" touch-action="pan-y" loading="eager" src="Models/CONSTRUCTION_CENTERED.glb?sound=Sound/Hip Hop This 20.mp3" autoplay camera-target="auto auto auto" 
+      autoplay animation-name="" id="model-viewer" id="reveal" exposure="1" shadow-intensity="1" ar ar-modes="scene-viewer webxr quick-look"   
+      ios-src="Models/CONSTRUCTION_CENTERED.reality" alt="Squeeze Page Template" auto-rotate ar-scale="auto" ar-preferred interaction-prompt="none" 
+                    slot= "progress-bar" style="z-index: 1; width: 100%; height: 600px; position: static; ">
+
+                   <button slot="ar-button" style="z-index: 9; background-color:  #C2594D; border-radius: 8px; border: 1 px solid white; position: absolute; top: 2px; right: 0; height: 40px; width: auto; ">
+                     👆 <b style="color:#FFFFFF;"><strong>HIP-HOP IN AUGMENTED REALITY</strong></b></button>  
+  
+       <!--WORKING VERSION 
+     <div class="card1">
       <model-viewer camera-controls camera-orbit="-75deg 42deg 40deg" touch-action="pan-y" poster="images/under-construction-2891888.jpg" skybox-image="images/construction-site-7092650.jpg"
-      loading="eager" src="Models/TALLEST_CENTERED_W_DUMMY.glb?sound=Sound/Hip Hop This 20.mp3" autoplay camera-target="auto auto auto" 
+      loading="eager" src="Models/CONSTRUCTION_CENTERED.glb?sound=Sound/Hip Hop This 20.mp3" autoplay camera-target="auto auto auto" 
       autoplay animation-name="" id="model-viewer" id="reveal" exposure="1" shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look" 
-      ios-src="Models/Sophia no white.reality" alt="Squeeze Page Template" auto-rotate ar-scale="auto" interaction-prompt="none" 
+      ios-src="Models/CONSTRUCTION_CENTERED.reality" alt="Squeeze Page Template" auto-rotate ar-scale="auto" interaction-prompt="none" 
                     slot= "progress-bar" style="z-index: 1; width: 100%; height: 600px; position: static; ">
             
                     <button slot="ar-button" style="z-index: 9; background-color:  #C2594D; border-radius: 8px; border: 1 px solid white; position: absolute; top: 2px; right: 0; height: 40px; width: auto; ">
-                     👆 <b style="color:#FFFFFF;"><strong>HIP-HOP IN AUGMENTED REALITY</strong></b></button>  
+                     👆 <b style="color:#FFFFFF;"><strong>HIP-HOP IN AUGMENTED REALITY</strong></b></button> -->  
        
   <!-- TESTING VERSION 1
      <div class="card1">
@@ -246,9 +264,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    </div>
    
    <div class="card">
-    <h2 style="text-align: center;" markdown="1"><b style="color:#FFFFFF;"><p style="font-family:Avenir Next LT Pro">4D Augmented Reality on Mobile Device!</p></h2></b>
-    <!--<img class="marginauto" src="images/AR Instructions ext 3.png" style="max-width: 100%; height: 200px">-->
-    <img class="marginauto" src="images/AR Instructions wht-trans3.png" style="max-width: 100%; height: 350px"> 
+   <h2 style="text-align: center;" markdown="1"><b style="color:#FFFFFF;"><p style="font-family:Avenir Next LT Pro">JOIN OUR WAITING LIST!</p></h2></b>
+    <!--<h2 style="text-align: center;" markdown="1"><b style="color:#FFFFFF;"><p style="font-family:Avenir Next LT Pro">4D Augmented Reality on Mobile Device!</p></h2></b> -->
+    <!--<img class="marginauto" src="images/AR Instructions wht-trans3.png" style="max-width: 100%; height: 200px"> -->
+    <!--<img class="marginauto" src="images/AR Instructions wht-trans3.png" style="max-width: 100%; height: 200px"> -->
+    <img class="marginauto" src="images/Sign-Up Form.png" style="max-width: 100%; height: 350px"> 
+    <h2 style="text-align: center;" markdown="1"><b style="color:#FFFFFF;"><p style="font-family:Avenir Next LT Pro"> Share with Family & Friends!</p></h2></b>
+    
+    <!--<h2 style="text-align: center;" markdown="1"><b style="color:#FFFFFF;"><p style="font-family:Avenir Next LT Pro">4D Augmented Reality on Mobile Device!</p></h2></b>
+    <img class="marginauto" src="images/AR Instructions wht-trans3.png" style="max-width: 100%; height: 200px">
+    <!--<img class="marginauto" src="images/Sign-Up Form.png" style="max-width: 100%; height: 350px"> --> 
     <h2 style="text-align: center;" markdown="1"><b style="color:#FFFFFF;"><p style="font-family:Avenir Next LT Pro"> Share with Family & Friends!</p></h2></b>
     </style>  
    </div>
